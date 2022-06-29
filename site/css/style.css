@@ -1,0 +1,130 @@
+body {
+    height: 100%;
+    margin: 0;
+    background-color: #DEB887;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s linear;
+}
+
+body.dark {
+    background-color: #232c25;
+    color: #fafafa;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    position: relative;
+    height: 17px;
+    width: 50px;
+    transform: scale(1.0);
+}
+
+.label .ball {
+    background-color: #999;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked+.label .ball {
+    transform: translateX(34px);
+}
+
+.fa-moon {
+    color: #f0e68c;
+}
+
+.fa-sun {
+    color: #ffa500;
+}
+
+#yeah {
+    width: 100%;
+}
+
+.principal {
+    padding: 30px;
+}
+
+.titulo {
+    padding-left: 666px;
+}
+
+.titulo-centralizado {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 3rem;
+}
+
+#sonho {
+    font-size: 50px;
+}
+
+em,
+p {
+    font-style: normal;
+}
+
+strong {
+    color: blueviolet;
+    font-style: italic;
+}
+
+em strong h1 {
+    color: #8b0000;
+    font-size: 7rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.social {
+    font-style: italic;
+    font-size: 50px;
+    display: block;
+    margin: 0px auto;
+}
+
+.social a {
+    text-decoration: none;
+    transition: ease 0.25s;
+    color: #00BFFF;
+}
+
+.social a:hover {
+    color: #483D8B;
+    text-decoration: underline;
+}
+
+.midia {
+    padding: 20px;
+}
+
+ul {
+    text-align: center;
+}
+
+.imagemsite {
+    width: 50%;
+    margin-right: 15%;
+    display: block;
+    margin: 0px auto;
+}

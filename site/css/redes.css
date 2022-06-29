@@ -1,0 +1,155 @@
+body {
+    height: 100%;
+    margin: 0;
+    background-color: #DEB887;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s linear;
+    color: #000;
+}
+
+body.dark {
+    background: #232c25;
+    color: #fafafa
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    position: relative;
+    height: 17px;
+    width: 50px;
+    transform: scale(1.0);
+}
+
+.label .ball {
+    background-color: #999;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked+.label .ball {
+    transform: translateX(34px);
+}
+
+.fa-moon {
+    color: #f0e68c;
+}
+
+.fa-sun {
+    color: #ffa500;
+}
+
+header li a {
+    width: 100%;
+    transition: ease 0.25s;
+}
+
+header a:hover {
+    color: #483D8B;
+    text-decoration: underline;
+}
+
+h1 {
+    position: relative;
+    top: 65px;
+    left: 30px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    height: 300px;
+    width: 490px;
+    border-radius: 10px;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bold;
+    font-size: 90px;
+    position: relative;
+    left: 700px;
+    top: -200px;
+}
+
+nav a:hover {
+    color: darkorchid;
+}
+
+.linksocial {
+    width: 100%;
+    margin: -5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.linksocial li {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    box-sizing: border-box;
+    border: 6px solid black;
+    border-radius: 35px;
+    width: 512px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.linksocial li:hover {
+    border-color: darkorchid;
+}
+
+.linksocial li:active {
+    border-color: #000;
+}
+
+.linksocial h2 {
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.information {
+    font-size: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: #708090;
+    padding: 40px;
+    width: 100%;
+    height: 220px;
+    min-height: 10px;
+    margin-top: 6px;
+}
+
+footer img {
+    width: 35%;
+}
+
+.copyright {
+    color: purple;
+    font-size: 25px;
+    margin: 5px 0 0;
+}
